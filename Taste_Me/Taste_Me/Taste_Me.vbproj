@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4BCA88F7-7565-4FC6-9022-AFB072C509D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Taste_Me.My.MyApplication</StartupObject>
+    <RootNamespace>Taste_Me</RootNamespace>
+    <AssemblyName>Taste_Me</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Taste_Me.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Taste_Me.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddRecipe.Designer.vb">
+      <DependentUpon>AddRecipe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddRecipe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHome.Designer.vb">
+      <DependentUpon>AdminHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat.Designer.vb">
+      <DependentUpon>Chat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Details.Designer.vb">
+      <DependentUpon>Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDetails.Designer.vb">
+      <DependentUpon>EditDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Friends.Designer.vb">
+      <DependentUpon>Friends.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Friends.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index.Designer.vb">
+      <DependentUpon>Index.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Index.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.vb">
+      <DependentUpon>Info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manual.Designer.vb">
+      <DependentUpon>Manual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyRecipes.Designer.vb">
+      <DependentUpon>MyRecipes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MyRecipes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reciepes.Designer.vb">
+      <DependentUpon>Reciepes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reciepes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.Designer.vb">
+      <DependentUpon>Start.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Register.Designer.vb">
+      <DependentUpon>Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.vb">
+      <DependentUpon>Users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAll.Designer.vb">
+      <DependentUpon>ViewAll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProfile.Designer.vb">
+      <DependentUpon>ViewProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddRecipe.resx">
+      <DependentUpon>AddRecipe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details.resx">
+      <DependentUpon>Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDetails.resx">
+      <DependentUpon>EditDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Friends.resx">
+      <DependentUpon>Friends.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat.resx">
+      <DependentUpon>Chat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index.resx">
+      <DependentUpon>Index.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manual.resx">
+      <DependentUpon>Manual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyRecipes.resx">
+      <DependentUpon>MyRecipes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reciepes.resx">
+      <DependentUpon>Reciepes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start.resx">
+      <DependentUpon>Start.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAll.resx">
+      <DependentUpon>ViewAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProfile.resx">
+      <DependentUpon>ViewProfile.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phm2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quilt-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bttn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bttn1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bttn1b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bttn1b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dark-wooden-website-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg1b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bckg3c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg6b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg6c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bttn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bttn2a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login2a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login2b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bttn3a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bttn3b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bttn4b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bttn4a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tab2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tab2a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginbtn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line3b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tab3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tab3f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bthnback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bttnback2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnlast.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arwl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arwr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\identitybnw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\idbw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Project_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal_Project_success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lastback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuH1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuH2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuRb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuR4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuRM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\056798-glossy-black-3d-button-icon-food-beverage-knife-fork3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\057240-green-grunge-clipart-icon-food-beverage-coffee-tea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuCl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuI.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuC2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3898115584_97fd7cb1fe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mcd_print_ad2_large.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause Hot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play Hot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dTrejdjbc.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause-button-outline_318-40569.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-play-3-xxl1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconmonstr-video-play-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pasue-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
