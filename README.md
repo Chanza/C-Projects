@@ -8,7 +8,7 @@ Library System (Book Managing System):
 Nursing System (Nurse Managing System):
   A windows application that helps manage nurses and patients within a hospital.
   
-Taste Me (Online Recipe System)
+Taste Me (Online Recipe System):
   A windows application for users to add, view and search for receipes. Added features include receipe edditing, rating, picture adding,
   searching according to relevance  and user profile avalability. Also a semi functional prototype of a communication message system
   between users to communicate to each of about receipes and other neccessary needs. 
